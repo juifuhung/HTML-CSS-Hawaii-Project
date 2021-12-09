@@ -1,0 +1,346 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  -webkit-box-shadow: 0 0 2px 0 black;
+          box-shadow: 0 0 2px 0 black;
+  z-index: 5;
+}
+
+header section.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header section.left img {
+  height: 40px;
+  width: 40px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #09777d;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0e0f0f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #09777d;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+main section.backimage {
+  width: 100%;
+  min-height: 90vh;
+  background-image: url(./資源包/Pictures/pexels-photo-416676.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+main section.backimage div.filter {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+main section.backimage div.words {
+  position: absolute;
+  text-align: center;
+}
+
+main section.backimage div.words h3 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+main section.backimage div.words button.start {
+  margin-top: 3rem;
+  color: black;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background-color: #3bf0e5;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+main section.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.options h3 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+main section.options h3 span {
+  color: #09777d;
+}
+
+main section.options section.circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.options section.circles section.card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.options section.circles section.card div.image-container {
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+main section.options section.circles section.card img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main section.options section.circles section.card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+main section.options section.circles section.card h4 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+main section.options section.circles section.card div.paragraph {
+  height: 120px;
+}
+
+main section.options section.circles section.card div.paragraph p {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+main section.options section.circles section.card a {
+  padding: 1rem 1.5rem;
+  background-color: #09777d;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+}
+
+footer div.grey {
+  margin-top: 2rem;
+  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.grey div.bottom {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.grey div.bottom img {
+  width: 40px;
+  height: 40px;
+}
+
+footer div.grey div.bottom h3 {
+  font-size: 1.5rem;
+}
+
+footer div.grey nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+footer div.grey nav ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+footer div.grey div.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem;
+}
+
+footer div.grey div.icons img {
+  height: 40px;
+  width: 40px;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  main section.backimage img {
+    min-height: 50vh;
+  }
+  main section.backimage div.words h3 {
+    font-size: 1.8rem;
+  }
+  main section.backimage div.words button.start {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  main section.options h3 {
+    font-size: 1.5rem;
+  }
+  main section.options span {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  main section.options h3 {
+    font-size: 1rem;
+  }
+  main section.options span {
+    font-size: 1rem;
+  }
+  main section.options div.paragraph {
+    max-height: 6rem;
+  }
+  main section.options a {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main section.options h3 {
+    font-size: 0.8rem;
+    padding: 1.5rem;
+  }
+  main section.options span {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=01hawaii.css.map */
